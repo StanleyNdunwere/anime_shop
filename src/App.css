@@ -1,2 +1,15 @@
 @import url("./base/base-style.css");
 
+.app-background{
+  background:rgb(241, 241, 241);
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.app-container{
+  background:rgb(241, 241, 241);
+  max-width: 1530px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
