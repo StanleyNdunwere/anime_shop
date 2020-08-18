@@ -46,7 +46,7 @@
   object-fit: cover;
   border-radius: 0.3rem;
   box-shadow: #33333340 0 0 0.2rem;
-  transition: transform 10s ease;
+  transition: transform 3s ease;
 }
 
 .menu-image-holder:hover {
