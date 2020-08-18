@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '..//homepage/homepage.style.css';
+import MenuItemContainer from "../menu_items/menu_item_container.component"
 
 class HomePage extends Component {
 
@@ -11,7 +12,7 @@ class HomePage extends Component {
 	render() {
 		return (
 			<div className= "homepage-container">
-				{this.componentName}
+				<MenuItemContainer></MenuItemContainer>
 			</div>
 		)
 	}
