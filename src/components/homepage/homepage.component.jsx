@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '..//homepage/homepage.style.css';
-import MenuItemContainer from "../menu_items/menu_item_container.component"
+import MenuItemContainer from "./menu_items/menu_item_container.component"
 
 class HomePage extends Component {
 

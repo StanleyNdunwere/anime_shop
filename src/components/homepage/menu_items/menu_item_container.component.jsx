@@ -1,11 +1,11 @@
 import React, { Component } from "react"
-import "../menu_items/menu-item.style.css"
-import MenuItem from "../menu_items/menu_item.component"
-import adventure from "../../assets/adventure.jpg"
-import action from "../../assets/action.jpg"
-import mystery from "../../assets/mystery.jpg"
-import manga from "../../assets/manga.jpg"
-import tv from "../../assets/tv.jpg"
+import "./menu-item.style.css"
+import MenuItem from "./menu_item.component"
+import adventure from "../../../assets/adventure.jpg"
+import action from "../../../assets/action.jpg"
+import mystery from "../../../assets/mystery.jpg"
+import manga from "../../../assets/manga.jpg"
+import tv from "../../../assets/tv.jpg"
 class MenuItemContainer extends Component {
 
   constructor(props) {
