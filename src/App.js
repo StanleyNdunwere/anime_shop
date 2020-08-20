@@ -16,7 +16,7 @@ class App extends React.Component {
         <div className="app-container">
           <Switch>
             <Route exact={true} path="/" component={HomePage} />
-            <Route exact={true} path="/anime-category" component={AnimeCategoryPage} />
+            <Route exact={true} path="/anime-category/:category" component={AnimeCategoryPage} />
           </Switch>
         </div>
       </div>
