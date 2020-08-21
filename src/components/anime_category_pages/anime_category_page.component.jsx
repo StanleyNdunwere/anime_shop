@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 class AnimeCategoryPage extends Component {
   constructor(props) {
     super(props)
@@ -13,4 +14,13 @@ class AnimeCategoryPage extends Component {
   }
 }
 
+
+AnimeCategories = (props)=>{
+return (
+  <div className= "anime-category-container">
+
+
+  </div>
+)
+}
 export default AnimeCategoryPage
