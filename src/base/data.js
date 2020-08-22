@@ -5,7 +5,7 @@ let animeData = [
       media: "TV",
       price: "20",
       rating: "9.7",
-      link:"https://i.ibb.co/QQCz9Yq/attackontitan.jpg",
+      link:"https://i.ibb.co/4N94cD6/deathnote.jpg",
       description: "The Shinigami is a god of death able to kill any person aslong as he is able to see the victim’s face and write their name down in the Death Note notebook.\nRyuk, who is bored by living the god of death lifestyle, leaves one of these notebooks in human reals to see how humans use it."
   },
   {

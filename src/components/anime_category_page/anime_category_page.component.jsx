@@ -20,7 +20,8 @@ class AnimeCategoryPage extends Component {
   componentDidMount() {
     let segmentedDataMedia = this.categoriseAnime(animeData, this.MEDIA)
     let segmentedDataGenre = this.categoriseAnime(animeData, this.GENRE)
-    // console.log(segmentedDataGenre)
+    // console.log(segmentedDataMedia)
+    this.setState({ mediaCategory: segmentedDataMedia, genreCategory: segmentedDataGenre })
 
 
   }
@@ -32,23 +33,24 @@ class AnimeCategoryPage extends Component {
         <div className="anime-collections-page-title">
           <p>Anime Categories</p>
         </div>
-        <SingleCategory></SingleCategory>
-        <SingleCategory></SingleCategory>
-        <SingleCategory></SingleCategory>
+        {this.state.genreCategory.map((genre) => {
+          return <SingleCategory key={genre.group} title={genre.group} groupData={genre.groupedData}>
+          </SingleCategory>
+        })}
         <div className="anime-media">
           <p>Anime Media Type</p>
         </div>
-        <SingleCategory></SingleCategory>
-        <SingleCategory></SingleCategory>
+        {this.state.mediaCategory.map((media) => {
+          return <SingleCategory key={media.group} title={media.group} groupData={media.groupedData}>
+          </SingleCategory>
+        })}
       </div>
 
     )
   }
 
-
-
   categoriseAnime = (animeData, genre = this.GENRE) => {
-    let categories = this.getGenresOrMedia(animeData, genre = this.GENRE)
+    let categories = this.getGenresOrMedia(animeData, genre)
     let segmentedData = []
     categories.forEach(category => {
       let groupedData = {};

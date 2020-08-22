@@ -13,14 +13,14 @@ class CategoryItem extends Component {
     return (
       <div className="category-item">
         <div className="anime-image-and-cart-button">
-          <img src={testImg} alt="Category" />
-          <div className="anime-add-to-cart-button scale">
+          <img src={this.props.itemData.link} alt={this.props.itemData.title} />
+          <div className="anime-add-to-cart-button">
             <p>Add To Cart</p><span><img src={cart} alt="cart" /></span>
           </div>
         </div>
         <div className="price-and-title">
-          <span>Naruto</span>
-          <span>$100</span>
+          <span>{this.props.itemData.title}</span>
+          <span>{`\$${this.props.itemData.price}`}</span>
         </div>
       </div>
     )

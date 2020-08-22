@@ -1,0 +1,103 @@
+.header-container {
+  height: 100px;
+  width: 100%;
+  padding: 1vh 2rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.icon-logo {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+}
+
+.logo img {
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+}
+
+.site-name {
+  font-family: var(--oleo);
+  font-size: 3rem;
+  align-self: center;
+}
+
+.site-name span {
+  font-weight: 700;
+  font-family: var(--oleo);
+}
+
+.site-name p {
+  font-weight: 700;
+  font-family: var(--oleo);
+}
+
+.nav-bar {
+  align-self: center;
+  justify-self: end;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nav-bar a {
+  height: 100%;
+}
+
+.nav-bar a {
+  font-family: var(--lato);
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  font-weight: 400;
+  height: 100px;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-self: center;
+}
+
+.nav-bar a:hover, .nav-bar p:hover {
+  background: rgba(255, 166, 0, 0.603);
+}
+
+.nav-bar div {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav-bar div img {
+  width: auto;
+  height: 60px;
+  padding: 10px;
+  align-self: center;
+  z-index: 2;
+}
+
+.counter {
+  position: relative;
+}
+
+.counter p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 37% 0;
+  text-align: center;
+  font-size: 1rem;
+}
