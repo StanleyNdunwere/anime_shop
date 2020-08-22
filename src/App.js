@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import HomePage from './components/homepage/homepage.component'
 import { Route, Switch } from "react-router-dom"
-import AnimeCategoryPage from "./components/anime_category_pages/anime_category_page.component"
+import AnimeCategoryPages from "./components/anime_category_pages/anime_category_page.component"
+import AnimeCategoryPage from "./components/anime_category_page/anime_category_page.component"
 
 class App extends React.Component {
   constructor(props) {
@@ -16,7 +17,8 @@ class App extends React.Component {
         <div className="app-container">
           <Switch>
             <Route exact={true} path="/" component={HomePage} />
-            <Route exact={true} path="/anime-category/:category" component={AnimeCategoryPage} />
+            <Route exact={true} path="/collections" component={AnimeCategoryPage} />
+            <Route exact={true} path="/anime-category/:category" component={AnimeCategoryPages} />
           </Switch>
         </div>
       </div>

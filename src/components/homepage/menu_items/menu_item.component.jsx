@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import "./menu-item.style.css"
-import { Route, Switch, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
 class MenuItem extends Component {
 
@@ -44,6 +44,7 @@ class MenuItem extends Component {
         urlTail = ADVENTURE.toLowerCase()
         break;
       case (MYSTERY):
+      default:
         urlTail = MYSTERY.toLowerCase()
         break;
     }

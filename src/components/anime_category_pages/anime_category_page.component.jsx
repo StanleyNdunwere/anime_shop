@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 
 
-class AnimeCategoryPage extends Component {
+class AnimeCategoryPages extends Component {
   constructor(props) {
     super(props)
     this.componentName = "anime category"
@@ -15,12 +16,4 @@ class AnimeCategoryPage extends Component {
 }
 
 
-AnimeCategories = (props)=>{
-return (
-  <div className= "anime-category-container">
-
-
-  </div>
-)
-}
-export default AnimeCategoryPage
+export default withRouter(AnimeCategoryPages)
