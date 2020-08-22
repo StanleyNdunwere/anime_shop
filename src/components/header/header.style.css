@@ -39,7 +39,8 @@
   font-family: var(--oleo);
 }
 
-.site-name p {
+.site-name a {
+  text-decoration: none;
   font-weight: 700;
   font-family: var(--oleo);
 }

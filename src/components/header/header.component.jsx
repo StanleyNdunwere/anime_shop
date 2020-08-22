@@ -18,13 +18,13 @@ class Header extends Component {
             <img src={logo} alt="" />
           </div>
           <div className="site-name">
-            <p><span>Anime</span> Shop</p>
+            <Link to="/"><span>Anime</span> Shop</Link>
           </div>
         </div>
         <div class="nav-bar">
           <Link to="/collections">Collections</Link>
-          <Link>Contact</Link>
-          <Link>Sign In</Link>
+          <Link to="/collections">Contact</Link>
+          <Link to="/collections">Sign In</Link>
           <div className="counter">
             <div>
               <Link>

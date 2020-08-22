@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import "../anime_category_page/anime-category-page.style.css"
-import testImg from "../../assets/tv.jpg"
 import cart from "../../assets/cart.png"
 
 class CategoryItem extends Component {
@@ -20,7 +19,7 @@ class CategoryItem extends Component {
         </div>
         <div className="price-and-title">
           <span>{this.props.itemData.title}</span>
-          <span>{`\$${this.props.itemData.price}`}</span>
+          <span>{`$${this.props.itemData.price}`}</span>
         </div>
       </div>
     )
