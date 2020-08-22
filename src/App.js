@@ -5,6 +5,7 @@ import { Route, Switch } from "react-router-dom"
 import AnimeCategoryPages from "./components/anime_category_pages/anime_category_page.component"
 import AnimeCategoryPage from "./components/anime_category_page/anime_category_page.component"
 import Header from "../src/components/header/header.component"
+import Footer from "../src/components/footer/footer.component"
 
 class App extends React.Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class App extends React.Component {
             <Route exact={true} path="/collections" component={AnimeCategoryPage} />
             <Route exact={true} path="/anime-category/:category" component={AnimeCategoryPages} />
           </Switch>
+          <Footer/>
         </div>
       </div>
     )

@@ -1,0 +1,17 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 70px;
+  width: 100%;
+  background: #333;
+  color: cornsilk;
+}
+
+.text {
+  align-self: center;
+  justify-self: center;
+}
+
+.text p {
+  color: cornsilk;
+}
