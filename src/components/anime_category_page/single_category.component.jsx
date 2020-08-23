@@ -14,6 +14,7 @@ class SingleCategory extends Component {
   render() {
     // console.log(this.props.groupData)
     let firstFourItems = this.getFirstFourItemsToDisplay(this.props.groupData)
+    console.log(firstFourItems)
     return (
       <div className="anime-single-category">
         <div className="category-title">
@@ -27,7 +28,6 @@ class SingleCategory extends Component {
       </div>
     )
   }
-
 
   getFirstFourItemsToDisplay = (groupedData) => {
     if (groupedData.length === 0 || groupedData.length < 4) {
