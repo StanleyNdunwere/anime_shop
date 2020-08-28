@@ -23,9 +23,7 @@ class AnimeCategoryPage extends Component {
     // console.log(segmentedDataMedia)
     this.setState({ mediaCategory: segmentedDataMedia, genreCategory: segmentedDataGenre })
 
-
   }
-
 
   render() {
     return (
@@ -45,7 +43,6 @@ class AnimeCategoryPage extends Component {
           </SingleCategory>
         })}
       </div>
-
     )
   }
 
