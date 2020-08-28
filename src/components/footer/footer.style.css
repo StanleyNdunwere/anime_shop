@@ -1,10 +1,16 @@
+:root {
+  --footer-height: 70px;
+}
+
 .footer-container {
   display: grid;
   grid-template-columns: 1fr;
-  height: 70px;
+  height: var(--footer-height);
   width: 100%;
   background: #333;
   color: cornsilk;
+  position: relative; 
+  bottom: 0;
 }
 
 .text {

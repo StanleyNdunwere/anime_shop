@@ -53,7 +53,7 @@ class AnimeCategoryPage extends Component {
     let categories = this.getGenresOrMedia(animeData, genre)
     let segmentedData = []
     categories.forEach(category => {
-      let groupedData = {};
+      let groupedData = {}
       groupedData = {
         group: category,
         groupedData: []

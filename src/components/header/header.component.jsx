@@ -24,10 +24,10 @@ class Header extends Component {
         <div class="nav-bar">
           <Link to="/collections">Collections</Link>
           <Link to="/collections">Contact</Link>
-          <Link to="/collections">Sign In</Link>
+          <Link to="/sign-in">Sign In</Link>
           <div className="counter">
             <div>
-              <Link>
+              <Link to="/collections">
                 <img src={bag} alt="" />
               </Link>
             </div>
