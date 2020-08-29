@@ -13,17 +13,17 @@ class SignInSignUp extends Component {
       <div className="form-container">
         <p>Already have an account?</p>
         <p>Sign In with your account</p>
-        <form name="sign-up">
-          <div>
+        <form name="sign-up" >
+          <div className="email-container">
             <label htmlFor="email">Email</label>
             <input type="email" name="email" className="email-input" />
           </div>
-          <div>
+          <div className="password-container">
             <label htmlFor="email">Password</label>
             <input type="password" name="password" className="password-input" />
           </div>
-          <div>
-            <input type="submit" name="email" className="email-input" value= "Sign In" />
+          <div className="submit-container">
+            <input type="submit" name="email" className="email-input" value="Sign In" />
           </div>
         </form>
       </div>
