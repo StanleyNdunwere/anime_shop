@@ -5,6 +5,10 @@
   min-height: 100vh;
 }
 
+:root {
+  --min-height-content-body: 20vh;
+}
+
 .app-container {
   background: rgb(241, 241, 241);
   /* max-width: 1530px; */
@@ -13,5 +17,6 @@
 }
 
 .page-content-container {
-  min-height: calc(100vh - var(--header-height) - var(--footer-height))
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  --min-height-content-body: calc(100vh - var(--header-height) - var(--footer-height))
 }

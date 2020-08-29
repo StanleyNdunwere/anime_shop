@@ -10,22 +10,24 @@ class SignInSignUp extends Component {
 
   render() {
     return (
-      <div className="form-container">
-        <p>Already have an account?</p>
-        <p>Sign In with your account</p>
-        <form name="sign-up" >
-          <div className="email-container">
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" className="email-input" />
-          </div>
-          <div className="password-container">
-            <label htmlFor="email">Password</label>
-            <input type="password" name="password" className="password-input" />
-          </div>
-          <div className="submit-container">
-            <input type="submit" name="email" className="email-input" value="Sign In" />
-          </div>
-        </form>
+      <div className="root-container">
+        <div className="form-container">
+          <h2>Already have an account?</h2>
+          <p>Sign In with your account</p>
+          <form name="sign-up" >
+            <div className="field-container">
+              <label htmlFor="email" className="label label-placeholder" >Email</label>
+              <input type="email" name="email" className="email-input" />
+            </div>
+            <div className="field-container">
+              <label htmlFor="email" className=" label label-placeholder">Password</label>
+              <input type="password" name="password" className="password-input" />
+            </div>
+            <div className="submit-container">
+              <input type="submit" name="email" className="email-input" value="Sign In" />
+            </div>
+          </form>
+        </div>
       </div>
     )
   }
