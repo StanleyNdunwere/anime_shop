@@ -1,0 +1,74 @@
+.field-container {
+  padding: 1.5rem 1rem;
+  background: transparent;
+}
+
+.field-container .label {
+  display: block;
+  position: relative;
+  background: transparent;
+  transform: translateY(1.8rem) 2s;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: #22222290;
+  z-index: 1;
+}
+
+.label-focus {
+  animation: focusAnim 0.5s ease forwards;
+}
+
+.label-focus-out {
+  animation: focusAnimOut 0.5s ease forwards;
+}
+
+@keyframes focusAnim {
+  from {
+    display: block;
+    position: relative;
+    background: transparent;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #2222229a;
+    z-index: 1;
+  }
+  to {
+    transform: translateY(0rem);
+    margin-left: 0rem;
+    font-size: 0.9rem;
+    color: #222222;
+  }
+}
+
+@keyframes focusAnimOut {
+  from {
+    transform: translateY(0rem);
+    margin-left: 0rem;
+    font-size: 0.9rem;
+    color: #222222;
+  }
+  to {
+    position: relative;
+    background: transparent;
+    transform: translateY(1.8rem);
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #2222229a;
+    z-index: 1;
+  }
+}
+
+.field-container input {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  border-style: none;
+  border-bottom: 2px solid #222;
+  border-radius: 0.18rem;
+  background: transparent;
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-family: var(--open-sans);
+  z-index: 2;
+}

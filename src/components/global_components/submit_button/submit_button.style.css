@@ -1,0 +1,25 @@
+
+.submit-container {
+  margin-top: 2.0rem;
+  padding: 0.5rem 1rem;
+}
+
+.submit-container input {
+  border-style: none;
+  width: 35%;
+  height: 3.5rem;
+  color: white;
+  background: #222;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 0.2rem;
+}
+
+.submit-container input:hover {
+  border: 0.15rem solid #222;
+  border-radius: 0.2rem;
+  color: #222;
+  background: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+}

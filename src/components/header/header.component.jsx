@@ -21,7 +21,7 @@ class Header extends Component {
             <Link to="/"><span>Anime</span> Shop</Link>
           </div>
         </div>
-        <div class="nav-bar">
+        <div className="nav-bar">
           <Link to="/collections">Collections</Link>
           <Link to="/collections">Contact</Link>
           <Link to="/sign-in">Sign In</Link>
