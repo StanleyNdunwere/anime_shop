@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import "../sign_in_sign_up_pages/sign_in_sign_up.style.css"
 import TextInput from "../global_components/text_input_component/text_input.component"
 import SubmitButton from "../global_components/submit_button/submit_button.component"
+import { signInWithGoogle } from '../../base/firebase_config/firebase_config_data'
+
 
 class SignInSignUp extends Component {
 
@@ -17,6 +19,11 @@ class SignInSignUp extends Component {
     console.log(this.state)
     this.setState(data)
   }
+
+  handleSignInWithGoogle = () => {
+    
+   }
+
 
   render() {
     return (
@@ -41,9 +48,9 @@ class SignInSignUp extends Component {
               inputText="Enter Password"
               handleChange={this.handleChange}
               parentState={this.state} />
-            <div className = "button-container">
-              <SubmitButton submitType="submit" submitName="submit-button" submitValue="Sign In" style = {{width:"35%"}}/>
-              <SubmitButton submitType="submit" submitName="submit-button" submitValue="Sign In" style = {{width:"50%"}}/>
+            <div className="button-container">
+              <SubmitButton submitType="submit" submitName="submit-button" submitValue="Sign In" style={{ width: "35%" }} />
+              <SubmitButton submitType="submit" submitName="submit-button" submitValue="Google" style={{ width: "50%" }} />
             </div>
           </form>
         </div>
