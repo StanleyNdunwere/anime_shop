@@ -1,4 +1,4 @@
-import firebase from 'firebase/app'
+import firebase from '@firebase/app'
 import 'firebase/auth'
 import 'firebase/firestore'
 
@@ -18,7 +18,7 @@ firebase.initializeApp(firebaseConfig)
 export const auth = firebase.auth()
 export const firestore = firebase.firestore()
 
-const provider = firebase.auth.GoogleAuthProvider()
+const provider = new firebase.auth.GoogleAuthProvider()
 provider.setCustomParameters({
   prompt: "select_account"
 })

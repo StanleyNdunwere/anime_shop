@@ -50,14 +50,14 @@ class MenuItemContainer extends Component {
           {this.menuItems.map((menuItem) => {
             return <MenuItem src={menuItem.src}
               title={menuItem.title}
-              key={menuItem.id}></MenuItem>
+              key={menuItem.id}/>
           })}
         </div>
         <div className="anime-type-contaner">
           {this.menuTypes.map((menuType) => {
             return <MenuItem src={menuType.src}
               title={menuType.title}
-              key={menuType.id}></MenuItem>
+              key={menuType.id}/>
           })}
         </div>
       </div>

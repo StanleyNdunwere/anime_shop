@@ -13,6 +13,7 @@
   font-size: 1.3rem;
   font-weight: 500;
   border-radius: 0.2rem;
+  cursor: pointer;
 }
 
 .submit-container input:hover {
@@ -22,4 +23,5 @@
   background: white;
   font-size: 1.3rem;
   font-weight: 500;
+  cursor: pointer;
 }

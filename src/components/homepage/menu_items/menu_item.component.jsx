@@ -17,7 +17,6 @@ class MenuItem extends Component {
         <img className="menu-image-holder" src={this.props.src} alt="Anime" />
         <div className="menu-content-background" onClick={(() => {
           this.goToNextPage(this.props)
-          console.log("logging from the anime click content")
         })}>
           <div className="menu-item-content">
             <p className="menu-item-header">{this.props.title}</p>

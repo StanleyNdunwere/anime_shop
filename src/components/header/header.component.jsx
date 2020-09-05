@@ -3,6 +3,8 @@ import "./header.style.css"
 import logo from "../../assets/shield.png"
 import bag from "../../assets/bag.png"
 import { Link } from "react-router-dom"
+import { auth, signInWithGoogle } from '../../base/firebase_config/firebase_config_data'
+
 class Header extends Component {
   constructor(props) {
     super(props)
@@ -11,6 +13,8 @@ class Header extends Component {
   }
 
   render() {
+    let currentUser = this.props.currentUser
+    console.log(currentUser)
     return (
       <div className="header-container">
         <div className="icon-logo">
@@ -24,7 +28,10 @@ class Header extends Component {
         <div className="nav-bar">
           <Link to="/collections">Collections</Link>
           <Link to="/collections">Contact</Link>
-          <Link to="/sign-in">Sign In</Link>
+          {!currentUser ?
+            (<Link to="/sign-in" >Sign In</Link>) :
+            (<Link to="/" onClick={() => { auth.signOut() }}>Sign Out</Link>)
+          }
           <div className="counter">
             <div>
               <Link to="/collections">

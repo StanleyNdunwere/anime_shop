@@ -14,7 +14,7 @@ class SingleCategory extends Component {
   render() {
     // console.log(this.props.groupData)
     let firstFourItems = this.getFirstFourItemsToDisplay(this.props.groupData)
-    console.log(firstFourItems)
+    // console.log(firstFourItems)
     return (
       <div className="anime-single-category">
         <div className="category-title">

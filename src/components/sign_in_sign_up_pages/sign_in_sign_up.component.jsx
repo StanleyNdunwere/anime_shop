@@ -21,8 +21,8 @@ class SignInSignUp extends Component {
   }
 
   handleSignInWithGoogle = () => {
-    
-   }
+    signInWithGoogle()
+  }
 
 
   render() {
@@ -49,8 +49,15 @@ class SignInSignUp extends Component {
               handleChange={this.handleChange}
               parentState={this.state} />
             <div className="button-container">
-              <SubmitButton submitType="submit" submitName="submit-button" submitValue="Sign In" style={{ width: "35%" }} />
-              <SubmitButton submitType="submit" submitName="submit-button" submitValue="Google" style={{ width: "50%" }} />
+              <SubmitButton
+                onClick={() => { console.log("clicked submit") }}
+                submitName="submit-button" submitValue="Sign In"
+                style={{ width: "35%", textAlign: "center" }}
+              />
+              <SubmitButton onClick={this.handleSignInWithGoogle}
+                submitName="submit-button" submitValue="Google"
+                style={{ width: "50%", textAlign: "center", background: "blue" }}
+              />
             </div>
           </form>
         </div>

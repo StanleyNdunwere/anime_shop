@@ -9,14 +9,15 @@ class SubmitButton extends Component {
   }
 
   render() {
-    let submitType = this.props.submitType
+    let submitType = !this.props.submitType ? null : this.props.submitType
     let submitName = this.props.submitName
     let submitValue = this.props.submitValue
+    let onClick = this.props.onClick
     let style = this.props.style
     return (
       <span className="submit-container" >
-        <input type={submitType} name={submitName} className="email-input" value={submitValue} 
-        style={style !== null ? style : null} />
+        <input onClick={onClick} type={submitType} name={submitName} readOnly={true} className="email-input" value={submitValue}
+          style={style !== null ? style : null} />
       </span>
     )
   }
