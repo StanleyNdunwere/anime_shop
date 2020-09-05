@@ -7,7 +7,8 @@ import AnimeCategoryPage from "./components/anime_category_page/anime_category_p
 import Header from "../src/components/header/header.component"
 import Footer from "../src/components/footer/footer.component"
 import SignInSignUp from './components/sign_in_sign_up_pages/sign_in_sign_up.component';
-import { auth } from './base/firebase_config/firebase_config_data'
+import { auth, storeNewUserToDB } from './base/firebase_config/firebase_config_data'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -21,8 +22,10 @@ class App extends React.Component {
   subscriptionToFirebase = null
 
   componentDidMount() {
-    this.subscriptionToFirebase = auth.onAuthStateChanged((user) => {
-      console.log(user)
+    this.subscriptionToFirebase = auth.onAuthStateChanged(async (user) => {
+      // console.log(user)
+      await storeNewUserToDB(user)
+
       this.setState({ currentUser: user })
     })
   }

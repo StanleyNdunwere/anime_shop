@@ -27,4 +27,26 @@ export const signInWithGoogle = () => {
   auth.signInWithPopup(provider)
 }
 
+export const storeNewUserToDB = async (userData, additionalData) => {
+  if (!userData) { return }
+  const userReference = firestore.doc(`users/${userData.uid}`)
+  const snapShotOfUser = await userReference.get()
+  // console.log(snapShotOfUser)
+  const { email, displayName } = userData
+  const created = new Date()
+  if (!snapShotOfUser.exists) {
+    try {
+      userReference.set({
+        email,
+        displayName,
+        created,
+        ...additionalData,
+      })
+    } catch (error) {
+      console.log(error, "Unable to save user information")
+    }
+  }
+  return userReference
+}
+
 export default firebase

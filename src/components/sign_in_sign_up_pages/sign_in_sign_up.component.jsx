@@ -56,7 +56,7 @@ class SignInSignUp extends Component {
               />
               <SubmitButton onClick={this.handleSignInWithGoogle}
                 submitName="submit-button" submitValue="Google"
-                style={{ width: "50%", textAlign: "center", background: "blue" }}
+                style={{ width: "50%", textAlign: "center", background: '#4585e3' }}
               />
             </div>
           </form>
